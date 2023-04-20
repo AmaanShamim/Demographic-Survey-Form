@@ -1,0 +1,144 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    background-image: url(https://www.pressnote.in/upload/446131.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div#container {
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    background-color: #00000099;
+}
+
+header#headline {
+    padding: 6% 0%;
+    color: white;
+}
+
+h1#title {
+    font-size: 300%;
+}
+
+p#description {
+    font-size: 135%;
+    padding-top: 4px;
+}
+
+form#survey-form {
+    margin: 0% 20%;
+    padding: 2%;
+    color: white;
+    text-align: left;
+    background-color: rgb(153 0 0 / 50%);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.detail {
+    padding: 20px;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    height: 40px;
+    margin-top: 6px;
+    font-size: initial;
+    padding: 0% 2%;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: grey;
+}
+
+p {
+    padding-bottom: 12px;
+}
+
+span.clue {
+    font-size: x-small;
+    padding: 2px;
+}
+
+label {
+    padding: 6px;
+}
+
+.input-radio, .input-checkbox {
+    width: 35px;
+    height: 20px;
+}
+
+textarea#comments {
+    padding: 10px 10px;
+    resize: vertical;
+    min-height: 140px;
+    font-size: initial;
+    border-radius: 3px;
+}
+
+button#submit {
+    min-height: 40px;
+    font-size: large;
+    background-color: #00b900d6;
+    color: white;
+    border: 1px;
+    border-radius: 2px;
+}
+
+input, button, select, textarea {
+    font-family: 'Cabin', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    h1#title {
+        font-size: 150%;
+        padding-top: 35px;
+    } 
+
+    p#description {
+        font-size: 60%;
+    }
+
+    form#survey-form {
+        padding: 0px 5px;
+        margin: 0px;
+        color: white;
+        text-align: left;
+        background-color: rgb(153 0 0 / 50%);
+        border-radius: 5px 5px 0px 0px;
+        font-size: small;
+    }
+
+    .detail {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-control {
+        height: 29px;
+        margin-top: 6px;
+        font-size: initial;
+        padding: 0% 2%;
+        border: 1px solid white;
+        border-radius: 6px;
+        color: grey;
+        font-size: small;
+    }
+
+    .input-radio, .input-checkbox {
+        width: 25px;
+        height: 12px;
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+      <title>Survey Form</title>
+  </head>
+  <body>
+      <div id="container">
+          <header id="headline">
+              <h1 id="title">Demographic Survey Form</h1>
+              <p id="description">Thank you letting us know more about you, So that we can improve.</p>
+          </header>
+          <form id="survey-form">
+              <div class="detail">
+                  <label id="name-label" for="name">Name</label>
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+              </div>
+              <div class="detail">
+                  <label id="email-label" for="email">Email</label>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email"
+                      required />
+              </div>
+              <div class="detail">
+                  <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                  <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+              </div>
+              <div class="detail">
+                  <p>
+                      What is your Gender?
+                  </p>
+                  <select id="most-like" name="mostLike" class="form-control" required>
+                      <option disabled selected value>Select an option</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="other">rather not to prefer</option>
+                  </select>
+              </div>
+              <div class="detail">
+                  <p>What is the highest degree or level of school you have completed?<span class="clue"> (Check all that
+                          you select)</span></p>
+                  <label><input name="prefer" value="Less than a high school diploma" type="checkbox"
+                          class="input-checkbox" />Less
+                      than a high school diploma</label>
+                  <label><input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />High
+                      school degree or equivalent</label>
+                  <label><input name="prefer" value="data-visualization" type="checkbox"
+                          class="input-checkbox" />CBachelor's degree (e.g. BA, BS)</label>
+                  <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox" />DMaster's
+                      degree (e.g. MA, MS, MEd)</label>
+                  <label><input name="prefer" value="open-source-community" type="checkbox"
+                          class="input-checkbox" />EDoctorate (e.g. PhD, EdD)</label>
+                  <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox" />
+                      Other</label>
+              </div>
+              <div class="detail">
+                  <p>What is your current employment status?</p>
+                  <select id="dropdown" name="role" class="form-control" required>
+                      <option disabled selected value>Select current role</option>
+                      <option value="student">Student</option>
+                      <option value="job">Full Time Job</option>
+                      <option value="learner">Full Time Learner</option>
+                      <option value="preferNo">Prefer not to say</option>
+                      <option value="other">Other</option>
+                  </select>
+              </div>
+              <div class="detail">
+                  <p>What is your ethnicity?</p>
+                  <label><input name="user-recommend" value="White / Caucasian" type="radio" class="input-radio"
+                          checked />White / Caucasian</label>
+                  <label><input name="user-recommend" value="Hispanic / Latino" type="radio"
+                          class="input-radio" />Hispanic / Latino</label>
+                  <label><input name="user-recommend" value="Black / African American" type="radio"
+                          class="input-radio" />Black / African American</label>
+                  <label><input name="user-recommend" value="Native American / American Indian" type="radio"
+                          class="input-radio" />Native American / American Indian</label>
+                  <label><input name="user-recommend" value="Asian / Pacific Islander" type="radio"
+                          class="input-radio" />Asian / Pacific Islander</label>
+                  <label><input name="user-recommend" value="Other" type="radio" class="input-radio" />Other</label>
+              </div>
+              <div class="detail">
+                  <p>You can give more detail about yourself here</p>
+                  <textarea id="comments" class="input-textarea" name="comment"
+                      placeholder="Enter about yourself..."></textarea>
+              </div>
+              <div class="detail">
+                  <button type="submit" id="submit" class="submit-button">Submit</button>
+              </div>
+          </form>
+      </div>
+  </body>
+</html>
